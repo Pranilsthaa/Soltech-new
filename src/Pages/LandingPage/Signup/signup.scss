@@ -1,0 +1,111 @@
+#signupPage{
+    font-family: 'poppins';
+    .main-container{
+        position: relative;
+        transform: translateY(15%);
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: 1fr 1.25fr;
+        max-width: 1086px;
+        min-height: 630px;
+        border-radius: 28px;
+        box-shadow: 5px 7px 76px 0px rgba(0, 0, 0, 0.205);
+        padding: 20px 0px 20px 20px;
+            .img-container{
+                background-color: rgb(8, 145, 97);
+                border-radius: 28px;
+            }
+            .form-container{
+                padding-inline: 40px;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                        button{
+                            padding: 8px 0;
+                            border-radius: 6px;
+                            color: white;
+                            font-weight: 500;
+                            background: rgb(40,120,255);
+                            background: linear-gradient(90deg, rgba(40,120,255,1) 0%, rgba(44,101,200,1) 100%);
+                        }
+                }
+                h1{
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+                p{
+                    color: #313131;
+                    font-size: 15px;
+                    margin: 10px 0 20px 0;
+                }
+                .input-group{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-inline-end: 10px;
+                    align-items: center;
+                    position: relative;
+                    border: 1px solid #79747E;
+                    height: 40px;
+                    border-radius: 4px;
+                        label{
+                            position: absolute;
+                            top:50%;
+                            left:5px;
+                            transform: translateY(-50%);
+                            font-size: 14px;
+                            color:rgb(172, 166, 166);
+                            padding: 0 5px;
+                            pointer-events: none;
+                            transition: 0.5s;
+                        }
+                        input{
+                            margin-left: 10px;
+                            width: 90%;
+                            height: 30px;
+                            outline: none;
+                                &:focus~label{
+                                    top:0;
+                                    font-size: 12px;
+                                    background-color: #ffffff;
+                                    color: black;
+                                }
+                                &:valid~label{
+                                    top:0;
+                                    font-size: 12px;
+                                    background-color: #ffffff;
+                                    color: black;
+
+                                }
+                        }
+                }
+
+                .row1{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 20px;
+                }
+                .row2{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                        .hor-line{
+                            position: relative;
+                            border-bottom: 1px solid grey;
+                                &::after{
+                                    content: 'Or Signup with';
+                                    position: absolute;
+                                    margin: -13px;
+                                    background-color: white;
+                                    padding-inline: 20px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                }
+                        }
+                }
+            }
+    }
+}

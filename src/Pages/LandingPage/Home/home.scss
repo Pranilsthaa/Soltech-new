@@ -1,0 +1,91 @@
+.homePage{
+    background: url('/images/home_bg.png');
+    max-width: 1920px;
+    margin: 0 auto;
+    min-height: 729px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Plus Jakarta Sans", sans-serif;
+        .hero{
+            display: flex;
+            min-height: 729px;
+            align-items: center;
+            justify-content: center ;
+                .left{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 28px;
+                    h1{
+                        font-size: 44px;
+                        font-weight: bold;
+                        max-width: 670px;
+                        line-height: 55px;
+                    }
+                    h2{
+                        font-size: 18px;
+                        color: #364050;
+                        max-width: 490px;
+                    }
+                    .btn{
+                        display: flex;
+                        gap:16px;
+                        a{
+                            font-weight: bold;
+                        }
+                        .vdo-btn{
+                            background-color: #F1F6FF;
+                            padding: 19px 31.5px;
+                            border-radius: 8px;
+                                span{
+                                    background-color: #000000;
+                                    border-radius: 8px;
+                                    background: linear-gradient(90deg, rgba(40,120,255,1) 0%, rgba(44,101,200,1) 100%);
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    display: flex;
+                                    gap: 8px;
+                                    z-index: 999;
+                                }
+                            }
+                            .get-started-btn{
+                                padding: 19px 50px;
+                                background: rgb(40,120,255);
+                                background: linear-gradient(90deg, rgba(40,120,255,1) 0%, rgba(44,101,200,1) 100%);
+                                border-radius: 8px;
+                                color: white;
+                            }
+                    }
+                }
+                .right{
+                    position: relative;
+                    width: 550px;
+                        .growthIcon{
+                            margin: 0px 0px 136px 50px;
+                            max-width: 100px;
+                        }
+                        .callIcon{
+                            position: absolute;
+                            left: 70%;
+                            bottom: 150px;
+                            max-width: 100px;
+                        }
+                        .progressIcon{
+                            position: relative;
+                            bottom: 20px;
+                            max-width: 200px;
+                        }
+                        .salesIcon{
+                            position: absolute;
+                            max-width: 120px;
+                            bottom: -150px;
+                            object-fit: cover;
+                        }
+                        .clientsIcon{
+                            position: absolute;
+                            max-width: 200px;
+                            bottom: -160px;
+                            right: 0;
+                        }
+                }
+        }
+}
