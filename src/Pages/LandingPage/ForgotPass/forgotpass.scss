@@ -1,0 +1,134 @@
+.email-ver{
+    .hero{
+        .main-container{
+            position: relative;
+            top: 120px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 900px;
+            min-height: 550px;
+            border-radius: 20px;
+            box-shadow: 5px 7px 76px 0px rgba(0, 0, 0, 0.205);
+                .form-container{
+                    padding: 30px;
+                    max-width: 450px;
+                        .header{
+                            display: flex;
+                            align-items:flex-end;
+                            font-family: "Red Hat Display", sans-serif;
+                            font-weight: bold;
+                            }
+                                .form-content{
+                                    min-height: 460px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    gap: 12px;
+                                    padding: 30px;
+                                    h1{
+                                        font-size: 30px;
+                                        font-weight: bold;
+                                    }
+                                    p{
+                                        color: #313131;
+                                    }
+                                    a{
+                                        display: flex;
+                                        align-items: center;
+                                            svg{
+                                                position: relative;
+                                                top: 1px;
+                                            }
+                                    }
+                                    form{
+                                        display: grid;
+                                        gap: 20px;
+                                        button{
+                                            padding: 8px 0;
+                                            border-radius: 6px;
+                                            color: white;
+                                            font-weight: 500;
+                                            background: rgb(40,120,255);
+                                            background: linear-gradient(90deg, rgba(40,120,255,1) 0%, rgba(44,101,200,1) 100%);
+                                        }
+                                        .input-group{
+                                            margin-top: 10px;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            padding-inline-end: 10px;
+                                            align-items: center;
+                                            position: relative;
+                                            border: 1px solid #79747E;
+                                            height: 40px;
+                                            border-radius: 4px;
+                                                label{
+                                                    position: absolute;
+                                                    font-family: 'poppins';
+                                                    top:50%;
+                                                    left:5px;
+                                                    transform: translateY(-50%);
+                                                    font-size: 14px;
+                                                    color:rgb(172, 166, 166);
+                                                    padding: 0 5px;
+                                                    pointer-events: none;
+                                                    transition: 0.5s;
+                                                }
+                                                input{
+                                                    margin-left: 10px;
+                                                    width: 90%;
+                                                    height: 30px;
+                                                    outline: none;
+                                                    font-family: 'poppins';
+                                                        &:focus~label{
+                                                            top:0;
+                                                            font-size: 12px;
+                                                            background-color: #ffffff;
+                                                            color: black;
+                                                        }
+                                                        &:valid~label{
+                                                            top:0;
+                                                            font-size: 12px;
+                                                            background-color: #ffffff;
+                                                            color: black;
+                        
+                                                        }
+                                                }
+                                    }
+                                }
+                                span{
+                                    position: relative;
+                                    top: 10px;
+                                }
+                }
+                .hor-line{
+                    position: relative;
+                    border-bottom: 1px solid darkgrey;
+                        &::after{
+                            content: 'Or Login with';
+                            font-family: 'poppins';
+                            font-size: 14px;
+                            position: absolute;
+                            margin: -10px;
+                            background-color: white;
+                            color: #313131;
+                            padding-inline: 20px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                }
+            }
+                .img-container{
+                    display: grid;
+                    place-items: center;
+                    padding-right: 20px;
+                        img{
+                            border-radius: 20px;
+                            width: 380px;
+                            height: 450px;
+                            object-fit: contain;
+                        }
+                }
+        }
+    }
+}

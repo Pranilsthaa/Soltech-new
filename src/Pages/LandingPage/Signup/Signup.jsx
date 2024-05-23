@@ -6,6 +6,7 @@ import { FaApple } from "react-icons/fa";
 import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
 import React from 'react';
+import stLogo from '/images/ST_.png';
 
 function Signup() {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -24,6 +25,10 @@ function Signup() {
       <div className="main-container">
         <div className="img-container"></div>
         <div className="form-container">
+          <div className="header">
+            <img src={stLogo} alt="solarius logo" />
+            <span>SOLTECH</span>
+          </div>
           <h1>Sign up</h1>
           <p>Let’s get you all set up so you can access your personal account.</p>
           <form onSubmit={handleSubmit(onSubmit)}>
