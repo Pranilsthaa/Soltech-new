@@ -12,7 +12,8 @@
         box-shadow: 5px 7px 76px 0px rgba(0, 0, 0, 0.205);
         padding: 20px 0px 20px 20px;
             .img-container{
-                background-color: rgb(8, 145, 97);
+                margin: auto;
+                max-width: 450px;
                 border-radius: 28px;
             }
             .form-container{
@@ -94,6 +95,7 @@
                 }
 
                 .row1{
+                    position: relative;
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 20px;

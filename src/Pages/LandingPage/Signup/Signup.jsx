@@ -7,6 +7,7 @@ import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
 import React from 'react';
 import stLogo from '/images/ST_.png';
+import bgIMG from '/images/bg_signup.png'
 
 function Signup() {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -23,7 +24,9 @@ function Signup() {
   return (
     <section id='signupPage'>
       <div className="main-container">
-        <div className="img-container"></div>
+        <div className="img-container">
+          <img src={bgIMG} alt="background image" />
+        </div>
         <div className="form-container">
           <div className="header">
             <img src={stLogo} alt="solarius logo" />

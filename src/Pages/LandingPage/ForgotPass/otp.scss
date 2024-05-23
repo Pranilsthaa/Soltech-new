@@ -17,9 +17,9 @@
                             align-items:flex-end;
                             font-family: "Red Hat Display", sans-serif;
                             font-weight: bold;
+                            color: #313131;
                             }
                                 .form-content{
-                                    min-height: 460px;
                                     display: flex;
                                     flex-direction: column;
                                     justify-content: center;
@@ -31,6 +31,9 @@
                                     }
                                     p{
                                         color: #313131;
+                                        font-size: 12px;
+                                        margin-bottom: 10px;
+                                        font-family: 'poppins';
                                     }
                                     a{
                                         display: flex;
@@ -42,7 +45,7 @@
                                     }
                                     form{
                                         display: grid;
-                                        gap: 20px;
+                                        
                                         button{
                                             padding: 8px 0;
                                             border-radius: 6px;
@@ -54,13 +57,14 @@
                                         .resend{
                                             display: flex;
                                             gap: 5px;
+                                            margin-bottom: 30px;
                                         }
                                         .input-group{
                                             margin-top: 10px;
                                             display: flex;
                                             justify-content: space-between;
                                             padding-inline-end: 10px;
-                                            align-items: center;
+                                            
                                             position: relative;
                                             border: 1px solid #79747E;
                                             height: 40px;
@@ -76,8 +80,10 @@
                                                     padding: 0 5px;
                                                     pointer-events: none;
                                                     transition: 0.5s;
+                                                    font-weight: 400;
                                                 }
                                                 input{
+                                                    padding-top: 10px;
                                                     margin-left: 10px;
                                                     width: 90%;
                                                     height: 30px;

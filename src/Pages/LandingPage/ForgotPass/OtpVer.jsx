@@ -22,15 +22,16 @@ function OtpVer() {
                             <p>An authentication code has been sent to your email.</p>
                         <div className="input-group">
                             <input
-                            type="text"
-                            id="email"
+                            type="number"
+                            id="otp"
+                            name="otp"
                             // {...register("first_name", { required: true })}
                             required
                             />
-                            <label htmlFor="email">Enter Code</label>
+                            <label htmlFor="otp">Enter Code</label>
                         </div>
-                        <button>Verify</button>
                         <span className='resend'>Didn’t receive a code? <a href="" className='text-red-600'>Resend</a> </span>
+                        <button>Verify</button>
                         </form>
                     </div>
                     
