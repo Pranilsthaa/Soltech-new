@@ -5,7 +5,7 @@ import EmailVer from './ForgotPass/EmailVer'
 import OtpVer from './ForgotPass/OtpVer'
 import SetPass from './ForgotPass/SetPass'
 
-function Index() {
+function LandingLayout() {
   return (
     <div>
       <Navbar />
@@ -18,4 +18,4 @@ function Index() {
   )
 }
 
-export default Index
+export default LandingLayout

@@ -1,0 +1,132 @@
+.storeUserPage{
+    padding-top: 40px;
+    padding-inline: 20px;
+    font-family: "Public Sans", sans-serif;
+    max-width: 1920px;
+    margin: 0 auto;
+    .top{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            h1{
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .btn{
+                display: flex;
+                gap: 16px;
+                button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    border-radius: 8px;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+                .export{
+                    height: 40px;
+                    width: 97px;
+                    background-color: white;
+                }
+                .customer{
+                    height: 40px;
+                    width: 147px;
+                    background-color: #484BFF;
+                    color: white;
+                }
+            }
+        }
+        .filter{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .btn-group{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 12px;
+                width: 230px;
+                height: 44px;
+                background-color: white;
+                border-radius: 8px;
+                border: 2px solid #E0E2E7;
+                box-sizing: border-box;
+                    button{
+                        color: #667085;
+                        font-size: 14px;
+                        padding-inline: 6px;
+                    }
+                    .active{
+                        background-color: #F4ECFB;
+                        color: #484BFF;
+                        border-radius: 8px;
+                        font-weight: bold;
+                        padding-inline: 6px;
+                        padding-top: 6px;
+                        padding-bottom: 6px;
+                        box-sizing: border-box;
+                    }
+                    
+            }
+            .search{
+                display: flex;
+                gap: 16px;
+                .input-box{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 8px;
+                    padding-inline-start: 10px;
+                    height: 40px;
+                    max-width: 220px;
+                    background-color: white;
+                    border: 2px solid #E0E2E7;
+                        input{
+                            border-radius: 8px;
+                            height: 36px;
+                            width: 180px;
+                            padding-left: 6px;
+                            padding-inline-end: 10px;
+                            outline: none;
+                            border: none;
+                            font-size: 14px;
+                                &::placeholder{
+                                    font-size: 14px;
+                                }
+                        }
+                }
+                button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    padding-inline: 18px;
+                    gap: 10px;
+                    border: 2px solid #E0E2E7;
+                    border-radius: 8px;
+                    background-color: white;
+                    max-width: 100px;
+                    height: 40px;
+                    font-size: 14px;
+                    color: #667085;
+                    font-weight: 500;
+                        img{
+                            height: 16px;
+                            width: 16px;
+                            object-fit: contain;
+                        }
+                }
+            }
+        }
+    }
+    .hero{
+        margin-top: 24px;
+            .card-con{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+    }
+}

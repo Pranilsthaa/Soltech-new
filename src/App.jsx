@@ -1,13 +1,18 @@
 import './App.css'
-import Index from './Pages/LandingPage'
+// import DashboardLayout from './Pages/Dashboard/DashboardLayout'
+// import LandingLayout from './Pages/LandingPage/LandingLayout'
+import RouterApp from './Router/RouterApp'
 
 function App() {
 
   return (
     <>
-       <Index />
+       {/* <LandingLayout /> */}
+       {/* <DashboardLayout /> */}
+       <RouterApp />
     </>
   )
 }
 
-export default App
+export default App;
+
