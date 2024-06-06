@@ -126,6 +126,7 @@
         margin-top: 24px;
             .card-con{
                 display: grid;
+                column-gap: 10px;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             }
     }

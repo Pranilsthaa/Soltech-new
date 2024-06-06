@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import './index.scss'
+import { VscKebabVertical } from "react-icons/vsc";
 
 function StoreUserCard({data, handleChange}) {
     const {name, img, status, orders, balance, userID} = data;
@@ -8,6 +9,7 @@ function StoreUserCard({data, handleChange}) {
 
         <section className="main">
             <input type="checkbox" value={userID} onChange={(e)=>handleChange(e, userID)} />
+            <VscKebabVertical />
             <img src={img} alt="" loading='lazy'/>
             <h1>{name}</h1>
             <h2 className={status==='Blocked' ? 'block' : ''}>{status}</h2>

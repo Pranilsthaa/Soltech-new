@@ -10,6 +10,9 @@ import earningICON from '/images/figma-icons/Icon.png'
 import salesICON from '/images/figma-icons/status-up.png'
 import {Calendar} from '@/Components/ui/calendar'
 import React from 'react';
+import Barchart from '@/Components/Charts/BarChart';
+import { IoCaretUpSharp } from "react-icons/io5";
+import Linechart from '@/Components/Charts/LineChart';
 
 function Home() {
   const initiallySelectedDate = new Date();
@@ -81,9 +84,15 @@ function Home() {
           </div>
           <div className="row2">
             <div className="card1">
-              
+              <div className="content">
+                <section>
+                  <h1>Daily Traffic</h1>
+                  <p><span>7890</span> Visitors</p> 
+                </section>
+                <h2> <IoCaretUpSharp /> +2.45%</h2>
+              </div>
+              <Barchart />
             </div>
-            
             <div className="card1 flex justify-center">
                 <Calendar  
                         mode="range"
@@ -91,12 +100,16 @@ function Home() {
                         onSelect={setSelectedDate}
                         className="text-custom relative top-2 z-50"
                         showOutsideDays={false}
-                        
                     />
             </div>
-            <div className="card1"></div>
+            <div className="card1 relative">
+                  <h1 className='-mb-6 top-2 font-bold absolute left-10'>Weekly Revenue</h1>
+                  <div id="chart" className=''>
+                    <Linechart />
+                  </div>
+            </div>
           </div>
-          <div className="row3"></div>
+          {/* <div className="row3"></div> */}
       </div>
     </div>
   )

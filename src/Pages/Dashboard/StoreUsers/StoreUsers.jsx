@@ -100,15 +100,21 @@ function StoreUsers() {
           </div>
     </div>
     <div className="hero">
-      <Suspense fallback={<div>Loading...</div>}>
+      
         <div className="card-con">
           {
             data[0].result.map((item)=>{
-              return <StoreUserCard key={item.userID} data={item} handleChange={handleChange}/>
+              return( 
+                <>
+                  <Suspense fallback={<div>Loading...</div>}>
+                      <StoreUserCard key={item.userID} data={item} handleChange={handleChange}/> 
+                  </Suspense>
+                </>
+              )
             })
           }
         </div>
-      </Suspense>
+      
     </div>
     </div>
   )
