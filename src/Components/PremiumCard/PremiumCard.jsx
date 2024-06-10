@@ -4,7 +4,7 @@ import stLogo from '/images/ST_.png'
 
 function PremiumCard() {
   return (
-    <Link>
+    <Link to='/pricing'>
         <div className='card-container'>
             <div className="circle">
                 <div className="inner-circle">

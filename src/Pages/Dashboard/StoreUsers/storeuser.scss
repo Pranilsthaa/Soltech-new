@@ -123,11 +123,43 @@
         }
     }
     .hero{
+        display: grid;
+        gap: 24px;
         margin-top: 24px;
             .card-con{
                 display: grid;
                 column-gap: 10px;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             }
+        .pagination{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p{
+                color: #667085;
+            }
+            .anchors{
+                display: flex;
+                gap: 6px;
+                margin-right: 28px;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 40px;
+                    min-width: 40px;
+                    border-radius: 8px;
+                    background-color: #F4ECFB;
+                    color: #484BFF;
+                    font-weight: bold;
+                    text-align: center;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    &:hover{
+                        background-color: #484BFF;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
     }
 }

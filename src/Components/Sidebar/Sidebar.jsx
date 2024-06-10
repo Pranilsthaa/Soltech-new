@@ -1,6 +1,6 @@
 import './sidebar.scss'
 import stLOGO from '/images/ST_.png'
-import productICON from '/images/productICON_up1.svg'
+// import productICON from '/images/productICON_up1.svg'
 import categoryICON from '/images/categoryICON_up.png'
 import stockICON from '/images/stockICON_up.svg'
 import { IoMdHome } from "react-icons/io";
@@ -30,22 +30,20 @@ function Sidebar() {
             </NavLink>
           </li>
           <li>
-            <a href="#">
-             {/* <img src={productICON} alt="" />  */}
-             <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.56641 8.37L13.5001 14.1187L23.3664 8.40371" stroke="#A3AED0" stroke-width="1.47812" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M13.5 24.3112V14.1075" stroke="#A3AED0" stroke-width="1.47812" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M11.1714 2.79L5.16394 6.13129C3.80269 6.88504 2.68896 8.77501 2.68896 10.3275V16.6838C2.68896 18.2363 3.80269 20.1263 5.16394 20.88L11.1714 24.2213C12.4539 24.9301 14.5577 24.9301 15.8402 24.2213L21.8477 20.88C23.209 20.1263 24.3227 18.2363 24.3227 16.6838V10.3275C24.3227 8.77501 23.209 6.88504 21.8477 6.13129L15.8402 2.79C14.5464 2.07 12.4539 2.07 11.1714 2.79Z" stroke="#A3AED0" stroke-width="1.47812" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M19.125 14.895V10.7775L8.44873 4.61246" stroke="#A3AED0" stroke-width="1.47812" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-             Products
-            </a>
-          </li>
+            <NavLink to="/products" className={(e)=> e.isActive ? 'active' : ''}>
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.56641 8.37L13.5001 14.1187L23.3664 8.40371" stroke="#A3AED0" strokeWidth="1.47812" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M13.5 24.3112V14.1075" stroke="#A3AED0" strokeWidth="1.47812" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M11.1714 2.79L5.16394 6.13129C3.80269 6.88504 2.68896 8.77501 2.68896 10.3275V16.6838C2.68896 18.2363 3.80269 20.1263 5.16394 20.88L11.1714 24.2213C12.4539 24.9301 14.5577 24.9301 15.8402 24.2213L21.8477 20.88C23.209 20.1263 24.3227 18.2363 24.3227 16.6838V10.3275C24.3227 8.77501 23.209 6.88504 21.8477 6.13129L15.8402 2.79C14.5464 2.07 12.4539 2.07 11.1714 2.79Z" stroke="#A3AED0" strokeWidth="1.47812" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M19.125 14.895V10.7775L8.44873 4.61246" stroke="#A3AED0" strokeWidth="1.47812" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                Products
+            </NavLink>
+            </li>
           <li>
-            <a href="#">
-             <img src={categoryICON} alt="" /> Categories
-            </a>
-          </li>
+              <NavLink to="/categories" className={(e)=> e.isActive ? 'active' : ''}><img src={categoryICON} alt="" /> Categories</NavLink>
+            </li>
+        
           <li>
             <a href="#">
              <TbTicket /> Discounts
@@ -56,9 +54,12 @@ function Sidebar() {
              <img src={stockICON} alt="" /> Stock
             </a>
           </li>
-          {/* <li><NavLink to="" className={(e)=> e.isActive ? 'active' : ''}>Products</NavLink></li>
-          <li><NavLink to="" className={(e)=> e.isActive ? 'active' : ''}>Categories</NavLink></li>
-          <li><NavLink to="" className={(e)=> e.isActive ? 'active' : ''}>Discounts</NavLink></li>
+          <li>
+              <NavLink to="/landingpages" className={(e)=> e.isActive ? 'active' : ''}> Landing Pages Demo</NavLink>
+            </li>
+          
+          
+         {/* <li><NavLink to="" className={(e)=> e.isActive ? 'active' : ''}>Discounts</NavLink></li>
           <li><NavLink to="" className={(e)=> e.isActive ? 'active' : ''}>Stock</NavLink></li> */}
         </ul>
         <PremiumCard />

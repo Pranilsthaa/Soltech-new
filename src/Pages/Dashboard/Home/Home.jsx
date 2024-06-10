@@ -93,7 +93,7 @@ function Home() {
               </div>
               <Barchart />
             </div>
-            <div className="card1 flex justify-center">
+            <div className="card1">
                 <Calendar  
                         mode="range"
                         selected={selectedDate}

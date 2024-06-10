@@ -5,6 +5,8 @@ import { GoDownload } from "react-icons/go";
 import { GoPlus } from "react-icons/go";
 import filterICON from '../../../../public/images/figma-icons/filter.png'
 import useCardStore from '@/Components/Store/userStore';
+import { FaCaretLeft } from "react-icons/fa";
+import { FaCaretRight } from "react-icons/fa";
 
 const StoreUserCard = lazy(() => import('@/Components/storeUserCard/StoreUserCard'));
 
@@ -55,6 +57,14 @@ let data = [
       ]  
   }  
 ]
+
+let total_page = 5;   //Data from API
+let current_page = 1;
+let arr = [];
+
+for(let i=1; i<=total_page; i++){
+    arr.push(i)
+}
 
 function StoreUsers() {
   
@@ -114,7 +124,24 @@ function StoreUsers() {
             })
           }
         </div>
-      
+        
+        <div className="pagination">
+          <div className="info">
+            <p>Showing 1-5 from 100</p>
+          </div>
+          
+              <div className="anchors">
+                  <a href={`random/url/${current_page - 1}`}><FaCaretLeft /></a>
+                    {arr.map((item, index) => {
+                      return (
+                          <a href={`random/url/${item}`} key={index}>{item}</a>
+                      )
+                    })
+                  }
+                  <a href={`random/url/${current_page + 1}`}><FaCaretRight /></a>
+              </div>
+          </div>
+        
     </div>
     </div>
   )

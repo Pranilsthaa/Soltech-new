@@ -124,7 +124,6 @@
             .card1{
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
                 align-items: center;
                 min-height: 260px;
                 border-radius: 30px;
@@ -136,8 +135,8 @@
                         justify-content: space-around;
                         gap: 50px;
                         align-items: flex-start;
-                        top: 5px;
-                        margin-bottom: -20px;
+                        top: 15px;
+                        margin-bottom: -15px;
                         section{
                             font-size: 15px;
                             h1{
