@@ -1,23 +1,14 @@
 import Navbar from '../../Components/Navbar/Navbar'
-import Home from './Home/Home'
-import Signup from './Signup/Signup'
-import EmailVer from './ForgotPass/EmailVer'
-import OtpVer from './ForgotPass/OtpVer'
-import SetPass from './ForgotPass/SetPass'
-import LoginForm from './Login/LoginForm'
+import { Outlet } from 'react-router-dom'
 
 function LandingLayout() {
   return (
     <div>
       <Navbar />
-      <Home />
-      <Signup />
-      <EmailVer />
-      <OtpVer />
-      <SetPass />
-      <LoginForm />
+      <div className="landing-con" style={{position: 'relative', top: '100px'}}>
+          <Outlet />
+      </div>
     </div>
   )
 }
-
 export default LandingLayout

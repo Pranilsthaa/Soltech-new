@@ -2,14 +2,17 @@
 import Toggle from '../Toggle/Toggle'
 import stLogo from '/images/ST_.png'
 import './navbar.scss'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
     <div className='nav-container'>
       <nav>
         <div className="logo">
-            <img src={stLogo} alt="solarius logo" />
-            <subtitle>SOLTECH</subtitle>
+            <Link to="/">
+              <img src={stLogo} alt="solarius logo" />
+              <subtitle>SOLTECH</subtitle>
+            </Link>
         </div>
         <div className="links">
           <div className="link">
@@ -26,8 +29,8 @@ function Navbar() {
              </div>
                 <div className="toggle">
                     <Toggle />
-                    <a href="">Login</a>
-                    <a href="" className='get-started-btn'>Get Started</a>
+                    <Link to="/login">Login</Link>
+                    <Link to="/signup" className='get-started-btn'>Get Started</Link>
                 </div>      
         </div>
        

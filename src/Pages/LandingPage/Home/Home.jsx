@@ -4,8 +4,9 @@ import growthIcon from '../../../../public/images/icon2.png'
 import progressIcon from '../../../../public/images/icon3.png'
 import salesIcon from '../../../../public/images/icon4.png'
 import clientsIcon from '../../../../public/images/icon5.png'
+import { Link } from 'react-router-dom'
 
-function Home() {
+function Home_LandingPage() {
   return (
     <div className="homePage">
         <section className="hero">
@@ -14,7 +15,7 @@ function Home() {
                 <h2>A Dynamic online marketplace, where convenience meets choice.</h2>
                 <div className="btn">
                   <a href="" className='vdo-btn'><span><img src="/images/play.png" alt="" />Watch Video</span></a>
-                  <a href="" className='get-started-btn'>Get Started</a>
+                  <Link to="/signup" className='get-started-btn'>Get Started</Link>
                 </div>
              </div>
              <div className="right">
@@ -29,4 +30,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home_LandingPage

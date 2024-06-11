@@ -1,14 +1,21 @@
 nav{
     position: fixed;
     width: 100%;
-    margin-top: 30px;
+    padding-top: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 999;
+    min-height: 50px;
         .logo{
             display: flex;
             align-items: center;
             gap: 10px;
+                a{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
         }
         .links{
             display: flex;
@@ -25,11 +32,6 @@ nav{
                     gap: 30px;
                     align-items: center;
                         a:nth-last-child(1){
-                            // display: flex;
-                            // justify-content: center;
-                            // align-items: center;
-                            // height: 36px;
-                            // width: 93px;
                             padding: 10px 14px;
                             border-radius: 70px;
                             color: white;

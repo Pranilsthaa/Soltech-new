@@ -8,6 +8,7 @@ import { IoEyeOff } from "react-icons/io5";
 import React from 'react';
 import stLogo from '/images/ST_.png';
 import bgIMG from '/images/bg_signup.png'
+import { Link } from 'react-router-dom';
 
 function Signup() {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -111,7 +112,7 @@ function Signup() {
                 {errors.terms && <span className='text-red-600 -mt-4'>Please Accept To Continue</span>}
                 <button>Create Account</button>
                 <section className='footer flex flex-col items-center'>
-                    <span>Already have an account? <a href="#" className='text-red-500 font-medium'>Login</a></span>
+                    <span>Already have an account? <Link to="/login" className='text-red-500 font-medium'>Login</Link></span>
                 </section>
             <div className="hor-line mt-3" />
             <div className="login-services flex gap-2 justify-center mt-4">

@@ -20,7 +20,7 @@ function Sidebar() {
         </div>
         <ul>
           <li>
-            <NavLink to="/" className={(e)=> e.isActive ? 'active' : ''}>
+            <NavLink to="/dashboard" className={(e)=> e.isActive ? 'active' : ''}>
               <IoMdHome />Home
             </NavLink>
           </li>

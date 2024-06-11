@@ -5,6 +5,7 @@ import fpImg from '/images/forgotPassImg.png'
 import { IoChevronBackOutline } from "react-icons/io5";
 import { FcGoogle } from 'react-icons/fc';
 import { FaApple } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function EmailVer() {
   return (
@@ -17,9 +18,9 @@ function EmailVer() {
                         <span>SOLTECH</span>
                     </div>
                     <div className="form-content">
-                        <a href="">
+                        <Link to="/login">
                             <IoChevronBackOutline /> Back to Login 
-                        </a>
+                        </Link>
                         <form>  
                             <h1>Forgot Password?</h1>
                             <p>Don’t worry, happens to all of us. Enter your email below to recover your password.</p>

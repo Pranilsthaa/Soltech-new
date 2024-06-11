@@ -7,15 +7,19 @@ import { FaApple } from "react-icons/fa";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import logo from '/images/ST_.png';
 import secureLoginImage from '/images/secure-login-image.png';
+import { Link, useNavigate } from 'react-router-dom';
 
 function LoginForm() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [showPassword, setShowPassword] = React.useState(false);
   const [arrowAnimation, setArrowAnimation] = useState(false);
 
+  const navigate = useNavigate();
+
   const onSubmit = (data) => {
     console.log(data);
     setArrowAnimation(true);
+    navigate('/dashboard')
     setTimeout(() => {
       setArrowAnimation(false);
     }, 1000);
@@ -60,14 +64,14 @@ function LoginForm() {
               <div className="checkbox">
                 <input type="checkbox" id="remember" {...register("remember")} />
                 <label htmlFor="remember">Remember me</label>
-                <a href="#">Forgot Password?</a>
+                <Link to="/forgot-password">Forgot Password?</Link>
               </div>
               <button type="submit" className={arrowAnimation ? "animate" : ""}>
                 Login
                 <span className="arrow"></span>
               </button>
               <div className="footer">
-                <span>Don’t have an account? <a href="#" className='text-red-500 font-medium'>Sign up</a></span>
+                <span>Don’t have an account? <Link to="/signup" className='text-red-500 font-medium'>Sign up</Link></span>
               </div>
               <div className="hor-line mt-3" />
               <div className="login-services flex gap-2 justify-center mt-4">
