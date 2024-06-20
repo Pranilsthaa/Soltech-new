@@ -1,0 +1,73 @@
+.discountPage{
+    position: relative;
+    height: calc(var(--screen-height) - 1px);
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #F4F7FE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 40px;
+    gap: 60px;
+    font-family: "Public Sans", sans-serif;
+        .header{
+            h1{
+                position: absolute;
+                left: 60px;
+                top: 54px;
+                font-weight: bold;
+                font-size: 24px;
+            }
+           a{
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                right: 60px;
+                background-color: #484BFF;
+                border-radius: 8px;
+                color: white;
+                gap: 5px;
+                padding: 10px 14px;
+           }
+        }
+        .hero{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 80%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+                img{
+                    max-height: 55%;
+                    object-fit: cover;
+                }
+                .text{
+                    margin-bottom: 30px;
+                    h1{
+                        font-weight: bold;
+                    }
+                    p{
+                        color: #667085;
+                        max-width: 650px;
+                    }
+                }
+                .add-btn{
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #484BFF;
+                        border-radius: 8px;
+                        color: white;
+                        gap: 5px;
+                        padding: 10px 14px;
+                    }
+                }
+      
+        }
+}

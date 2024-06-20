@@ -14,6 +14,8 @@ import EmailVer from '@/Pages/LandingPage/ForgotPass/EmailVer'
 import OtpVer from '@/Pages/LandingPage/ForgotPass/OtpVer'
 import SetPass from '@/Pages/LandingPage/ForgotPass/SetPass'
 import Home_LandingPage from '@/Pages/LandingPage/Home/Home'
+import Discount from '@/Pages/Dashboard/Discount/Discount'
+import CreateDiscount from '@/Pages/Dashboard/Discount/CreateDiscount/createDiscount'
 
 const router = createBrowserRouter([
     {
@@ -41,10 +43,19 @@ const router = createBrowserRouter([
             {
                 path: '/products',
                 element: <Product />
-            },{
+            },
+            {
                 path: '/add-product',
                 element: <AddProduct />
-            }
+            },
+            {
+                path: '/discount',
+                element: <Discount />
+            },
+            {
+                path: '/create-discount',
+                element: <CreateDiscount />
+            },
         ]
     },
     {

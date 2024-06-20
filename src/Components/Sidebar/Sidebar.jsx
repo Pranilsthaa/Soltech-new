@@ -43,21 +43,15 @@ function Sidebar() {
           <li>
               <NavLink to="/categories" className={(e)=> e.isActive ? 'active' : ''}><img src={categoryICON} alt="" /> Categories</NavLink>
             </li>
-        
+
           <li>
-            <a href="#">
-             <TbTicket /> Discounts
-            </a>
+            <NavLink to="/discount" className={(e)=> e.isActive ? 'active' : ''}><TbTicket /> Discounts</NavLink>
           </li>
           <li>
             <a href="#">
              <img src={stockICON} alt="" /> Stock
             </a>
           </li>
-          <li>
-              <NavLink to="/landingpages" className={(e)=> e.isActive ? 'active' : ''}> Landing Pages Demo</NavLink>
-            </li>
-          
           
          {/* <li><NavLink to="" className={(e)=> e.isActive ? 'active' : ''}>Discounts</NavLink></li>
           <li><NavLink to="" className={(e)=> e.isActive ? 'active' : ''}>Stock</NavLink></li> */}
